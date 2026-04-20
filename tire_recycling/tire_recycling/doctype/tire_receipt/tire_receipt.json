@@ -1,13 +1,20 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2026-04-20 15:06:45.536606",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "customer",
+  "column_break_tfqq",
   "posting_date",
-  "column_break_tfqq"
+  "column_break_jdbl",
+  "naming_series",
+  "section_break_raag",
+  "customer",
+  "driver",
+  "column_break_haax",
+  "supplier"
  ],
  "fields": [
   {
@@ -25,15 +32,46 @@
   {
    "fieldname": "column_break_tfqq",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_raag",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "driver",
+   "options": "Driver"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_haax",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jdbl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "REC-.YYYY.-.MM.-.####"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-20 15:24:37.641660",
+ "modified": "2026-04-20 16:36:00.427373",
  "modified_by": "Administrator",
  "module": "Tire Recycling",
  "name": "Tire Receipt",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
