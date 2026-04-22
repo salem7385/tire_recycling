@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-04-22 10:03:30.044133",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "column_break_bagh",
+  "\u0627\u0633\u0645_\u0627\u0644\u0635\u0646\u0641",
+  "column_break_fuii",
+  "qty_ordered",
+  "column_break_ymlp",
+  "qty_received",
+  "column_break_qalz",
+  "rate",
+  "column_break_fgfm",
+  "amount",
+  "column_break_uesj",
+  "warehouse"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "\u0643\u0648\u062f \u0627\u0644\u0635\u0646\u0641",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_bagh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "\u0627\u0633\u0645_\u0627\u0644\u0635\u0646\u0641",
+   "fieldtype": "Read Only",
+   "label": "\u0627\u0633\u0645 \u0627\u0644\u0635\u0646\u0641",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fuii",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty_ordered",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0643\u0645\u064a\u0629 \u0627\u0644\u0645\u0637\u0644\u0648\u0628\u0629 (\u0643\u062c\u0645)"
+  },
+  {
+   "fieldname": "column_break_ymlp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty_received",
+   "fieldtype": "Float",
+   "label": "\u0627\u0644\u0643\u0645\u064a\u0629 \u0627\u0644\u0645\u0633\u062a\u0644\u0645\u0629 (\u0643\u062c\u0645)"
+  },
+  {
+   "fieldname": "column_break_qalz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "\u0633\u0639\u0631 \u0627\u0644\u0643\u062c\u0645 "
+  },
+  {
+   "fieldname": "column_break_fgfm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a"
+  },
+  {
+   "fieldname": "column_break_uesj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u0645\u062e\u0632\u0646",
+   "options": "Warehouse"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-04-22 11:07:40.151246",
+ "modified_by": "Administrator",
+ "module": "Tire Recycling",
+ "name": "Tire Receipt Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
